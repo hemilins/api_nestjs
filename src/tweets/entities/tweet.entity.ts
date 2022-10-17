@@ -1,5 +1,8 @@
 import { Prop, Schema } from '@nestjs/mongoose';
 import { SchemaFactory } from '@nestjs/mongoose/dist';
+
+export type TweetDocument = Tweet & Document;
+
 export type TweetsProps = {
   content: string;
   screen_name: string;
